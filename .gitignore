@@ -1,4 +1,4 @@
 # Ignorar todo dentro del directorio pages excepto la carpeta template
-NoteBookWeb/pages/*
-!NoteBookWeb/pages/template/
-!NoteBookWeb/pages/template/**
+pages/*
+!pages/template/
+!pages/template/**
