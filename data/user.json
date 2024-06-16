@@ -1,0 +1,21 @@
+{
+    "name": "",
+    "last-name": "",
+    "age": "",
+    "knowledge": [
+        "example",
+        "example",
+        "example"
+    ],
+    "learning": [
+        {
+            "name":"",
+            "progress": ""
+        },
+        {
+            "name":"",
+            "progress": ""
+        }
+    ],
+    "profile-pic":""
+}

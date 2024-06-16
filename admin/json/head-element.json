@@ -1,0 +1,45 @@
+[
+    {
+        "element": "link",
+        "attributes": [
+            {
+                "attributes": "rel",
+                "value": "stylesheet"
+            },
+            {
+                "attributes": "href",
+                "value": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            }
+        ]
+    },
+    {
+        "element": "link",
+        "attributes": [
+            {
+                "attributes": "rel",
+                "value": "stylesheet"
+            },
+            {
+                "attributes": "href",
+                "value": "../../admin/css/reset.css"
+            }
+        ]
+    },
+    {
+        "element": "link",
+        "attributes": [
+            {
+                "attributes": "rel",
+                "value": "stylesheet"
+            },
+            {
+                "attributes": "href",
+                "value": "../../admin/css/general-layout.css"
+            }
+        ]
+    },
+    {
+        "element": "title",
+        "attributes": []
+    }
+]
