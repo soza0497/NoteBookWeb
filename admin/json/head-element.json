@@ -1,5 +1,31 @@
 [
     {
+        "element": "meta",
+        "attributes": [
+            {
+                "attributes": "charset",
+                "value": "UTF-8"
+            }
+        ]
+    },
+    {
+        "element": "meta",
+        "attributes": [
+            {
+                "attributes": "name",
+                "value": "viewport"
+            },
+            {
+                "attributes": "content",
+                "value": "width=device-width, initial-scale=1.0"
+            }
+        ]
+    },
+    {
+        "element": "title",
+        "attributes": []
+    },
+    {
         "element": "link",
         "attributes": [
             {
@@ -21,7 +47,7 @@
             },
             {
                 "attributes": "href",
-                "value": "../../admin/css/reset.css"
+                "value": "../../admin/css/general-layout.css"
             }
         ]
     },
@@ -34,12 +60,8 @@
             },
             {
                 "attributes": "href",
-                "value": "../../admin/css/general-layout.css"
+                "value": "../../admin/css/reset.css"
             }
         ]
-    },
-    {
-        "element": "title",
-        "attributes": []
     }
 ]

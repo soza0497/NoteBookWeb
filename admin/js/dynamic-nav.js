@@ -1,65 +1,50 @@
 const setSubject = (element) => {
-    let subject = document.createElement("div");
-    subject.setAttribute("class", "side-nav__select");
+    let subject = document.createElement("li");
+    subject.setAttribute("class", "nav__button");
 
-    let spanSubject = document.createElement("span");
-    spanSubject.setAttribute("class", "side-nav__selected");
-    spanSubject.textContent = element.subject;
+    let subjectLink = document.createElement("a");
+    subjectLink.setAttribute("class", "nav__button-link");
+    subjectLink.textContent = element.subject;
 
-    subject.appendChild(spanSubject);
+    subject.appendChild(subjectLink);
 
     return subject;
 }
 
 const setTopics = (element) => {
     let topics = document.createElement("ul");
-    topics.setAttribute("class", "side-nav__menu disable")
+    topics.setAttribute("class", "nav__dropdown")
 
     element.topics.forEach(topicItem => {
         let listItem = document.createElement("li");
+        listItem.setAttribute("class", "dropdown__item");
+
         let listAnchor = document.createElement("a");
         listAnchor.setAttribute("href", topicItem.url);
         listAnchor.textContent = topicItem.topic;
 
         listItem.appendChild(listAnchor);
-
         topics.appendChild(listItem);
     });
     return topics;
 }
 
-const setDropDownElement = (element) => {
-    let dropdownContainer = document.createElement("section");
-    dropdownContainer.setAttribute("class", "side-nav__dropdown");
+const setNav = (nav, jsonFile) => {
+    let container = document.createElement("ul");
+    container.setAttribute("class", "nav__container");
 
-    if (element.topics.length > 0) {
-        let subject = setSubject(element);
-        let topics = setTopics(element);
-
-        dropdownContainer.appendChild(subject);
-        dropdownContainer.appendChild(topics);
-    } else {
-        let subject = setSubject(element);
-        dropdownContainer.appendChild(subject);
-    }
-
-    return dropdownContainer;
-    return null; // No devuelve nada si no pasa la validación
-}
-
-const setSideNav = (sideNav, jsonFile) => {
     fetch(jsonFile)
         .then(response => response.json())
-        .then(sideNavElement => {
-            sideNavElement.forEach(sideNavItem => {
-                let dropdown = setDropDownElement(sideNavItem);
-                if (dropdown) {
-                    sideNav.appendChild(dropdown);
+        .then(navElement => {
+            navElement.forEach(navItem => {
+                let subject = setSubject(navItem);
+                let topics = setTopics(navItem);
+                if (topics) {
+                    subject.appendChild(topics)
                 }
-
+                container.appendChild(subject);
             });
-
-            // Llamar a la función para inicializar eventos y funcionalidades
+            nav.appendChild(container);
             initializeSideNav();
         });
 }
@@ -68,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let sideNavElement = document.querySelector("#sideNav")
     let navJson = "/data/nav.json";
 
-    setSideNav(sideNavElement, navJson);
+    setNav(sideNavElement, navJson);
 })
 
 const initializeSideNav = () => {

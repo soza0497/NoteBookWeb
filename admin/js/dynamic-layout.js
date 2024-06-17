@@ -16,7 +16,7 @@ const setLinks = (head, jsonFile) => {
                     });
                 }
                 
-                head[0].appendChild(element);
+                head[0].insertBefore(element, head[0].firstChild);
             });
         })
         .catch(error => console.error('Error fetching JSON:', error));
