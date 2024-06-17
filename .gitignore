@@ -2,3 +2,7 @@
 pages/*
 !pages/template/
 !pages/template/**
+
+# Ignorar todo dentro del directorio data excepto la carpeta template
+data/*
+!data/template/*
