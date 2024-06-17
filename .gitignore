@@ -5,4 +5,4 @@ pages/*
 
 # Ignorar todo dentro del directorio data excepto la carpeta template
 data/*
-!data/template/*
+!data/template
