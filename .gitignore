@@ -1,7 +1,10 @@
-# Ignorar todo dentro del directorio pages excepto la carpeta template
+# Ignorar todo dentro del directorio pages excepto la carpeta template y proyectos
 pages/*
 !pages/template/
 !pages/template/**
+!pages/proyectos/
+!pages/proyectos/**
+
 
 # Ignorar todo dentro del directorio data excepto la carpeta template
 data/*
