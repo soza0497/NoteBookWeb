@@ -4,6 +4,7 @@ const setSubject = (element) => {
 
     let subjectLink = document.createElement("a");
     subjectLink.setAttribute("class", "nav__button-link");
+    subjectLink.setAttribute("href", element.url)
     subjectLink.textContent = element.subject;
 
     subject.appendChild(subjectLink);

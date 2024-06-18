@@ -1,43 +1,21 @@
 [
     {
-        "subject":"HOME",
-        "url": "",
+        "subject":"Subject",
+        "url": "../folder/file.html",
         "topics": [],
         "sidenav": false
     },
     {
-        "subject":"HTML",
-        "url": "",
+        "subject":"Multi-Topic Subject",
+        "url": "../folder/file.html",
         "topics": [
             {
-                "topic": "Terminologia",
-                "url": "../html-theory/terminologia.html"
+                "topic": "Topic 1",
+                "url": "../folder/file.html"
             },            
             {
-                "topic": "Hola",
-                "url": "../html-theory/terminologia.html"
-            }
-        ],
-        "sidenav": true
-    },
-    {
-        "subject":"CSS",
-        "url": "",
-        "topics": [
-            {
-                "topic": "Terminologia",
-                "url": "../css-theory/terminologia.html"
-            }
-        ],
-        "sidenav": true
-    },
-    {
-        "subject":"JS",
-        "url": "",
-        "topics": [
-            {
-                "topic": "Terminologia",
-                "url": "../js-theory/terminologia.html"
+                "topic": "Topic 2",
+                "url": "../folder/file.html"
             }
         ],
         "sidenav": true

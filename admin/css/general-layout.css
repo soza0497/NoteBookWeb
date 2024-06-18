@@ -19,6 +19,11 @@ body {
     font-family: monospace;
 }
 
+h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
 .disable {
     display: none;
 }
@@ -69,7 +74,7 @@ body {
 
 .dropdown__item {
     display: block;
-    padding: 5px 0;
+    padding: 5px;
     overflow: hidden;
 }
 
@@ -95,9 +100,7 @@ body {
 
 .nav__button:hover .nav__dropdown {
     display: block;
-}
-
-
+} 
 
 .main__workspace {
     padding: 15px;

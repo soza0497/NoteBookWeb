@@ -22,10 +22,6 @@
         ]
     },
     {
-        "element": "title",
-        "attributes": []
-    },
-    {
         "element": "link",
         "attributes": [
             {
