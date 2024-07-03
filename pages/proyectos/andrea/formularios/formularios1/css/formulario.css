@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(44, 77, 148);
+}
+
+.container {
+    height: 600px;
+    width: 900px;
+    border: 6px solid red;
+}
+
+.side-image {
+    background-image: url(../assets/form-image.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    width: 50%;
+}
+
+.form {
+    border: 2px solid rgb(225, 0, 255); 
+}
+
